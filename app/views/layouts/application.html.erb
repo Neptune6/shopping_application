@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ShoppingApplication</title>
+    <!--Adding Google Sign-In-->
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="445393221408-09141sse2gsvp1lvmuiv43bh8sd3vqho.apps.googleusercontent.com">
+    
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    
+    <!--Adding Google Sign-In-->
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>
